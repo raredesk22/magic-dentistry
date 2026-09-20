@@ -1,0 +1,15 @@
+$lines = Get-Content "index.html"
+$lines[1479] = '                <img src="logo.jpeg" alt="Magic Dentistry Logo" style="height: 60px; object-fit: contain; mix-blend-mode: multiply;">'
+$lines[1480] = ''
+$lines[1481] = ''
+$lines[1482] = ''
+$lines[1483] = ''
+$lines[1857] = '                    <img src="logo.jpeg" alt="Magic Dentistry Logo" style="height: 60px; object-fit: contain; mix-blend-mode: multiply;">'
+$lines[1858] = ''
+$lines[1859] = ''
+$lines[1860] = ''
+$lines[1861] = ''
+$lines[1879] = '                <p>Monday - Saturday <span style="font-size:0.9em">10:00 AM - 2:00 PM, 5:00 PM - 8:00 PM</span></p>'
+$lines[1880] = '                <p>Sunday <span>By Pre-Appointment Only</span></p>'
+$lines[1881] = '                <p style="margin-top: 4px; font-size: 0.8rem; color: var(--text-muted);">(Doctor usually available from 10:30 AM to 1:00 PM)</p>'
+Set-Content "index.html" -Value ($lines -join "`n") -Encoding UTF8
